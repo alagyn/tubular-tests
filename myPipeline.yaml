@@ -3,19 +3,15 @@ meta:
 
 args:
   # sets default values
-  repo: my-repo.git
-  branch: main
+  myArg: myValue
 
 stages:
   # stages are completed sequentially
-  - stage1:
-    display: Build my thing
+  - display: Build my thing
     # tasks are completed concurrently, if possible
     tasks:
-      - build-linux
-      - build-win
+      - myTask
 
-  - stage2:
-    display: upload the thing
+  - display: upload the thing
     tasks:
       - upload

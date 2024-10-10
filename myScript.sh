@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "yeet" > output.txt
+echo "yeet" >> output.txt
