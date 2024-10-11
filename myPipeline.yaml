@@ -3,7 +3,7 @@ meta:
 
 args:
   # sets default values
-  myArg: myValue
+  branch: main
 
 stages:
   # stages are completed sequentially
