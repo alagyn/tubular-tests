@@ -12,6 +12,6 @@ stages:
     tasks:
       - myTask
 
-  #- display: upload the thing
-    #tasks:
-      #- upload
+  - display: Be idle
+    tasks:
+      - idleTask

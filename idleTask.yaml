@@ -1,0 +1,14 @@
+meta:
+  display: My task
+
+node:
+  # lists of tags
+  requires:
+    - build
+    - linux
+
+steps:
+  - display: Sleep
+    type: script
+    lang: shell
+    script: sleep 10
