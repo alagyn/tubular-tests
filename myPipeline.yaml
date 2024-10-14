@@ -1,9 +1,22 @@
 meta:
   display: My pipeline
+  keep-runs: 10
 
 args:
   # sets default values
+  repo: git@github.com:/alagyn/tubular-tests.git
   branch: main
+
+triggers:
+  - type: commit
+    repo: "@{repo}"
+    branch: main
+    include: 
+      - myScript.sh
+
+  - type: daily
+    when: 9pm
+
 
 stages:
   # stages are completed sequentially

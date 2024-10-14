@@ -12,7 +12,7 @@ node:
 steps:
   # steps are completed sequentially
   - type: clone
-    url: "git@github.com:/alagyn/tubular-tests.git"
+    url: "@{repo}"
     branch: "@{branch}"
 
   - display: Exec shell
