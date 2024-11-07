@@ -1,0 +1,18 @@
+meta:
+  display: My task 2
+
+node:
+  # lists of tags
+  requires:
+    - linux
+  avoids:
+    - mac
+
+steps:
+  - display: Exec shell
+    type: script
+    lang: shell
+    script: |
+      # this is my shell script
+      echo "testing testing 1 2 3"
+      rm -f output.txt

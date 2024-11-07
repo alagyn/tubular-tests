@@ -24,7 +24,8 @@ stages:
     # tasks are completed concurrently, if possible
     tasks:
       - myTask
+      - idleTask
 
   - display: Be idle
     tasks:
-      - idleTask
+      - myFolder/myTask2.yaml
