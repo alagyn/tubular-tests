@@ -1,0 +1,31 @@
+meta:
+  display: My Other pipeline
+  keep-runs: 5
+
+args:
+  # sets default values
+  repo: git@github.com:/alagyn/tubular-tests.git
+  branch: main
+
+triggers:
+  - type: commit
+    repo: "@{repo}"
+    branch: main
+    include: 
+      - myScript.sh
+
+  - type: daily
+    when: 9pm
+
+
+stages:
+  # stages are completed sequentially
+  - display: Build my thing
+    # tasks are completed concurrently, if possible
+    tasks:
+      - myTask
+      - idleTask
+
+  - display: Be idle
+    tasks:
+      - myFolder/myTask2.yaml
