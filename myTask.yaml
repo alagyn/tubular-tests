@@ -28,7 +28,7 @@ steps:
 
   # copy build to artifact dir
   - type: archive
-    target: "@{workspace}/output.txt"
+    target: "output.txt"
 
   - type: archive
-    target: "@{workspace}/myFolder"
+    target: "myFolder"
