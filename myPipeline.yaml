@@ -26,6 +26,6 @@ stages:
       - myTask
       - idleTask
 
-  - display: Be idle
+  - display: Run nested task
     tasks:
       - myFolder/myTask2.yaml
