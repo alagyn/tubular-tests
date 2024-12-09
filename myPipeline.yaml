@@ -14,7 +14,8 @@ triggers:
     include: 
       - myScript.sh
 
-  - type: daily
+  - type: schedule
+    period: 1 day
     when: 9pm
 
 
